@@ -7,7 +7,7 @@ interface IProps{
     text?: string;
     fontSize?: ETextSize;
     color?: ETextColor;
-    fontWeight: ETextWeight;
+    fontWeight?: ETextWeight;
 }
 
 

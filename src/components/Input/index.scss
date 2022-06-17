@@ -1,0 +1,26 @@
+@import '../../assets/styles/_variables';
+
+.input-wrap{
+    position: relative;
+    width: 100%;
+
+    .__icon{
+        position: absolute;
+        top: 2;
+        left: 2;
+    }
+
+    .__input{
+        background-color: $Verylightgrayishcyan;
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: $verydarkcyan;
+        &:focus-visible{
+            outline: 3px solid $lightgrayishcyan;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@import "../../assets/styles/_variables";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+    padding: 2rem;
+    background-color: $white;
+    border-radius: 10px;
+    .calculate {
+      width: 42%;
+      .select-tip {
+        margin-top: 20px;
+
+        .tip-buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          button {
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            &:hover {
+              background-color: $primary;
+              color: $verydarkcyan;
+            }
+            &.active {
+              background-color: $primary;
+              color: $verydarkcyan;
+            }
+          }
+          .input-wrap {
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            input {
+              width: 100%;
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      .people {
+        margin-top: 20px;
+        .label {
+          display: flex;
+          justify-content: space-between;
+        }
+        &.error {
+          input {
+            border: 1px solid rgb(189, 0, 0);
+          }
+        }
+      }
+    }
+    .result {
+      width: 48%;
+      background-color: $verydarkcyan;
+      padding: 2rem;
+      border-radius: 10px;
+      position: relative;
+      .text-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .button-wrap {
+        position: absolute;
+        bottom: 2rem;
+        width: 86%;
+        button {
+          display: block;
+          width: 100%;
+          padding: 15px 0;
+          color: $verydarkcyan;
+          &:hover{
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

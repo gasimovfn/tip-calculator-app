@@ -10,7 +10,9 @@ export enum ETextSize{
 }
 
 export enum ETextColor{
-
+    WHITE = 'white',
+    GRAY = 'gray',
+    GREEN = 'green'
 }
 
 export enum ETextWeight{
@@ -22,9 +24,11 @@ export enum ETextWeight{
 
 
 export enum EButtonTextColor{
-    PRIMARY = 'primary'
+    WHITE = 'white',
+    BLACK = 'black'
 }
 
 export enum EButtonColor{
-
+    DARK = 'dark',
+    LIGHT = 'light'
 }

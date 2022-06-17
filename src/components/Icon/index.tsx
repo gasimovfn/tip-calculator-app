@@ -8,7 +8,7 @@ interface IProps{
 
 const Icon:FC<IProps> = ({path, classname}) => {
   return (
-    <i className={`far fa-${path}} ${classname}`}></i>
+    <i className={`far fa-${path} ${classname}`}></i>
   )
 }
 
