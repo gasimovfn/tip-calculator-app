@@ -7,12 +7,13 @@ interface IProps {
   text?: string;
   onclick?: any;
   textColor?: EButtonTextColor;
-  buttonColor?: EButtonColor
-  value?: string | number
+  buttonColor?: EButtonColor;
+  disabled?: boolean;
+  value?: string | number;
 }
 
-const Button: FC<IProps> = ({ text, onclick, textColor, buttonColor, value }) => {
-  return <button className={`button ${textColor} ${buttonColor}`} onClick={onclick}  value={value}>{text}</button>;
+const Button: FC<IProps> = ({ text, onclick, textColor, buttonColor, value, disabled }) => {
+  return <button disabled={disabled} className={`button ${textColor} ${buttonColor} ${disabled? 'disabled' : ''}`} onClick={onclick}  value={value}>{text}</button>;
 };
 
 export default Button;

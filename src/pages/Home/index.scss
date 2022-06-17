@@ -4,6 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  .title {
+    margin-top: 8rem;
+    width: 5%;
+    h1 {
+      color: $verydarkcyan;
+    }
+  }
+
   .wrap {
     display: flex;
     justify-content: space-between;
@@ -81,10 +90,6 @@
           display: block;
           width: 100%;
           padding: 15px 0;
-          color: $verydarkcyan;
-          &:hover{
-            background-color: $primary;
-          }
         }
       }
     }

@@ -1,7 +1,8 @@
-@import './assets/styles/_variables';
+@import "./assets/styles/_variables";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
-body{
-    background-color: $lightgrayishcyan;
-    font-weight: 700;
-    // font-family: ;/
+body {
+  background-color: $lightgrayishcyan;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
 }

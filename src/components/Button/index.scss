@@ -1,21 +1,31 @@
-@import '../../assets/styles/_variables';
+@import "../../assets/styles/_variables";
 
+button {
+  // padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
 
-button{
-    // padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
+  &.light {
+    background-color: $primary;
+  }
+  &.dark {
+    background-color: $verydarkcyan;
+  }
 
+  
 
-    &.light{
-        background-color: $primary;
-    }
-    &.dark{
-        background-color: $verydarkcyan;
-    }
+  &.white {
+    color: $white;
+  }
 
+  &.disabled {
+    background-color: $disabledBtn;
+    color: $verydarkcyan;
+    cursor: not-allowed;
+  }
 
-    &.white{
-        color: $white;
-    }
+  &.allow {
+    color: $verydarkcyan;
+    background-color: $primary;
+  }
 }
